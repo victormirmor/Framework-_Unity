@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b23537f94ae61eb184ea8093a430011, type: 3}
+  m_Name: Localization_PT
+  m_EditorClassIdentifier: 
+  languageName: "PORTUGU\xCAS"
+  languageCode: pt
+  gameOverText: "VOC\xCA PERDEU!"
+  gameWinText: "VIT\xD3RIA!"
+  pausedText: PAUSA
+  livesRemainingText: 'As vidas que restam:'
+  playButtonText: JOGAR
+  optionsButtonText: "OP\xC7\xD5ES"
+  quitButtonText: SAIR
