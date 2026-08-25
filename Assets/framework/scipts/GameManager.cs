@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     [Header("Escena Inicial / Menú")]
-    [SerializeField] private string resetSceneName = "main_menu";
+    [SerializeField] private string resetSceneName ="" , main_menu="main_menu";
 
     [Header("Configuración por Defecto")]
     [SerializeField] private GameSettingsSO defaultSettings;
@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name.Equals(resetSceneName) || scene.buildIndex == 0)
+        if (scene.name.Equals(resetSceneName) || scene.name.Equals(main_menu) ) ///|| scene.buildIndex == 0
         {
             ResetToDefaultValues();
         }

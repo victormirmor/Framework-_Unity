@@ -33,9 +33,9 @@ public class LanguageSelectorUI : MonoBehaviour
                     GameManager.Instance.SetLanguage(savedLang);
             }
 
-#if !UNITY_EDITOR
+//#if !UNITY_EDITOR
             ClosePanel();
-#endif
+//#endif
         }
     }
 

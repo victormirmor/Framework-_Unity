@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultLanguage: {fileID: 11400000, guid: 31384b3e9c4a1d3e39ed657974411df6, type: 2}
   defaultHealth: 100
-  defaultLives: 15
+  defaultLives: 3
   defaultScore: 0
   defaultLevelIndex: 1
   availableLanguages: []
