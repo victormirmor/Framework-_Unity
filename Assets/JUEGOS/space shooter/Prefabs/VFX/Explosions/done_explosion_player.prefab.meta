@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 3455fe69f7ddc4604b95bf9b0a1e88d7
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 13866
+  packageName: Space Shooter tutorial
+  packageVersion: 1.7
+  assetPath: Assets/_Complete-Game/Prefabs/Done_VFX/Done_Explosions/done_explosion_player.prefab
+  uploadId: 283084

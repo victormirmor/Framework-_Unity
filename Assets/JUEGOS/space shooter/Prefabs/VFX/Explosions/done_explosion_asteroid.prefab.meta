@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: a6d58f54ce5934781962a4f887e834f3
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 13866
+  packageName: Space Shooter tutorial
+  packageVersion: 1.7
+  assetPath: Assets/_Complete-Game/Prefabs/Done_VFX/Done_Explosions/done_explosion_asteroid.prefab
+  uploadId: 283084

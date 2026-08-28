@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: f36c72c738c55f741afcd674a0b1245f
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 13866
+  packageName: Space Shooter tutorial
+  packageVersion: 1.7
+  assetPath: Assets/Materials/vehicle_playerShip_glass_mat.mat
+  uploadId: 283084

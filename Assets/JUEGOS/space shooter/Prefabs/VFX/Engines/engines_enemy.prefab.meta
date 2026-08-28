@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 93bdcaae53f95461785a8eeb8c01bc61
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 13866
+  packageName: Space Shooter tutorial
+  packageVersion: 1.7
+  assetPath: Assets/Prefabs/VFX/Engines/engines_enemy.prefab
+  uploadId: 283084

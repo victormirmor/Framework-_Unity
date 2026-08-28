@@ -23,5 +23,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Survivor/alba.unity
     guid: ae12cd11efce708dfbe22c93e88ad0af
+  - enabled: 1
+    path: Assets/JUEGOS/space shooter/Scenes/Done_Main.unity
+    guid: d6cf7ed2faf3b47eb8f72eaa9c1a495a
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

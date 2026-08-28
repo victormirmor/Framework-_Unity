@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 8940b037a9b441c4cbd3d2b446838424
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 13866
+  packageName: Space Shooter tutorial
+  packageVersion: 1.7
+  assetPath: Assets/Materials/vehicle_playerShip_metal_mat.mat
+  uploadId: 283084

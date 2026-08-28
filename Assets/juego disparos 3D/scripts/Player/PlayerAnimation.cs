@@ -12,10 +12,10 @@ using UnityEngine;
         }
 
         void Update (){
-            animation();
+            playerAnim();
         }
 
-        void animation(){
+        void playerAnim(){
             // Leer ejes de movimiento
             float h = Input.GetAxisRaw(InputConstants.AXIS_HORIZONTAL);
             float v = Input.GetAxisRaw(InputConstants.AXIS_VERTICAL);

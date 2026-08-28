@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 814f6a7e3ec8a40aaa3a2057e2695924
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 13866
+  packageName: Space Shooter tutorial
+  packageVersion: 1.7
+  assetPath: Assets/_Complete-Game/Scripts/Done_BGScroller.cs
+  uploadId: 283084
