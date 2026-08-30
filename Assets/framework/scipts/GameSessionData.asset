@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ade682df4974afdca52677139bab864, type: 3}
+  m_Name: GameSessionData
+  m_EditorClassIdentifier: 
+  complexityLevel: 0
+  currentLanguage: {fileID: 11400000, guid: 31384b3e9c4a1d3e39ed657974411df6, type: 2}
+  defaultLanguage: {fileID: 11400000, guid: fc9205f605c4dd7aaa82be6311e0f1c6, type: 2}
+  totalLives: 2
+  globalScore: 130
+  currentHealth: 0
+  highScore: 60
+  defaultLives: 5
+  defaultScore: 0
+  defaultHealth: 100
+  defaultLevelIndex: 1
+  currentLevelIndex: 1

@@ -1,77 +1,72 @@
 using UnityEngine;
 
-public class LanguageSelectorUI : MonoBehaviour
+namespace Framework
 {
-    public const string LANGUAGE_PREF_KEY = "SelectedLanguageIndex";
-
-    [Header("Referencias de UI")]
-    [SerializeField] private GameObject languagePanel;
-
-    [Header("Lista de Idiomas Disponibles")]
-    [Tooltip("0 = Español, 1 = Inglés, 2 = Portugués, etc.")]
-    [SerializeField] private LocalizationDataSO[] availableLanguages;
-
-    private MainMenuUI mainMenuUI;
-
-    private void Awake()
+    public class LanguageSelectorUI : MonoBehaviour
     {
-        mainMenuUI = Object.FindFirstObjectByType<MainMenuUI>();
+        [Header("Anotador Pasivo de Datos")]
+        [SerializeField] private GameSessionDataSO sessionData;
 
-        // Si ya hay preferencia guardada, la aplicamos al GameManager y al Menú
-        if (PlayerPrefs.HasKey(LANGUAGE_PREF_KEY))
+        [Header("Referencias de UI")]
+        [SerializeField] private GameObject languagePanel;
+
+        [Header("Lista de Idiomas Disponibles")]
+        [SerializeField] private LocalizationDataSO[] availableLanguages;
+
+        private MainMenuUI mainMenuUI;
+
+        private void Awake()
         {
-            int savedIndex = PlayerPrefs.GetInt(LANGUAGE_PREF_KEY, 0);
+            mainMenuUI = Object.FindFirstObjectByType<MainMenuUI>();
 
-            if (availableLanguages != null && savedIndex >= 0 && savedIndex < availableLanguages.Length)
+            if (PlayerPrefs.HasKey(GameSessionDataSO.LANGUAGE_PREF_KEY))
             {
-                LocalizationDataSO savedLang = availableLanguages[savedIndex];
+                int savedIndex = PlayerPrefs.GetInt(GameSessionDataSO.LANGUAGE_PREF_KEY, 0);
 
-                if (mainMenuUI != null)
-                    mainMenuUI.UpdateMainMenuLanguage(savedLang);
+                if (availableLanguages != null && savedIndex >= 0 && savedIndex < availableLanguages.Length)
+                {
+                    ApplyLanguage(availableLanguages[savedIndex]);
+                }
 
-                if (GameManager.Instance != null)
-                    GameManager.Instance.SetLanguage(savedLang);
+                ClosePanel();
             }
-
-//#if !UNITY_EDITOR
-            ClosePanel();
-//#endif
         }
-    }
 
-    public void SelectLanguageByIndex(int index)
-    {
-        if (availableLanguages == null || availableLanguages.Length == 0) return;
-
-        if (index >= 0 && index < availableLanguages.Length)
+        public void SelectLanguageByIndex(int index)
         {
-            LocalizationDataSO selectedLang = availableLanguages[index];
+            if (availableLanguages == null || availableLanguages.Length == 0) return;
 
-            // 1. Guardar preferencia local
-            PlayerPrefs.SetInt(LANGUAGE_PREF_KEY, index);
-            PlayerPrefs.Save();
-
-            // 2. Notificar al GameManager (Persistente)
-            if (GameManager.Instance != null)
+            if (index >= 0 && index < availableLanguages.Length)
             {
-                GameManager.Instance.SetLanguage(selectedLang);
+                LocalizationDataSO selectedLang = availableLanguages[index];
+
+                PlayerPrefs.SetInt(GameSessionDataSO.LANGUAGE_PREF_KEY, index);
+                PlayerPrefs.Save();
+
+                ApplyLanguage(selectedLang);
+                ClosePanel();
+            }
+        }
+
+        private void ApplyLanguage(LocalizationDataSO language)
+        {
+            if (sessionData != null)
+            {
+                sessionData.SetLanguage(language);
             }
 
-            // 3. Actualizar la UI del Menú Principal
             if (mainMenuUI != null)
             {
-                mainMenuUI.UpdateMainMenuLanguage(selectedLang);
+                mainMenuUI.UpdateMainMenuLanguage(language);
             }
-
-            ClosePanel();
         }
-    }
 
-    private void ClosePanel()
-    {
-        if (languagePanel != null)
-            languagePanel.SetActive(false);
-        else
-            gameObject.SetActive(false);
+        private void ClosePanel()
+        {
+            if (languagePanel != null)
+                languagePanel.SetActive(false);
+            else
+                gameObject.SetActive(false);
+        }
     }
 }
