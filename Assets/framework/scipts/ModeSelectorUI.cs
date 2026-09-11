@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum GameMode{
+public enum GameMode
+{
     Classic,
     Survival,
     Math,
@@ -16,19 +17,20 @@ public class ModeSelectorUI : MonoBehaviour
     [SerializeField] private GameMode selectedMode;
 
     [Tooltip("Nombre de la escena que debe cargar este botón")]
-    [SerializeField] private string sceneToLoad = "Level_01";
+    [SerializeField] private string sceneToLoad = "01_SpaceShooter";
 
-    /// <summary>
-    /// Método público sin parámetros asignable directamente al OnClick() del Button.
-    /// </summary>
+    private static bool isLoadingScene = false;
+
+    private void OnEnable()
+    {
+        isLoadingScene = false;
+    }
+
     public void OnSelectModeButtonPressed()
     {
         ExecuteModeSelection();
     }
 
-    /// <summary>
-    /// Método por si querés invocar la selección vía código desde otro script.
-    /// </summary>
     public void SelectModeCustom(GameMode mode, string sceneName)
     {
         selectedMode = mode;
@@ -38,6 +40,9 @@ public class ModeSelectorUI : MonoBehaviour
 
     private void ExecuteModeSelection()
     {
+        if (isLoadingScene) return;
+        isLoadingScene = true;
+
         if (GameManager.Instance != null)
         {
             GameManager.Instance.SetGameMode(selectedMode);
@@ -45,10 +50,14 @@ public class ModeSelectorUI : MonoBehaviour
 
         if (!string.IsNullOrEmpty(sceneToLoad))
         {
+#if UNITY_EDITOR
+            Debug.Log($"<color=green>[ModeSelectorUI]</color> Cargando escena: <b>'{sceneToLoad}'</b>");
+#endif
             SceneManager.LoadScene(sceneToLoad);
         }
         else
         {
+            isLoadingScene = false;
             Debug.LogError($"[ModeSelectorUI] No se especificó una escena válida en el objeto {gameObject.name}.");
         }
     }

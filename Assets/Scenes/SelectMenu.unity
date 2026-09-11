@@ -303,7 +303,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326904323}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c1968ae60c691d5b613feeeb5df1a4, type: 3}
   m_Name: 
@@ -601,7 +601,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 477063926}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c1968ae60c691d5b613feeeb5df1a4, type: 3}
   m_Name: 
@@ -702,6 +702,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 477063926}
   m_CullTransparentMesh: 1
+--- !u!1001 &478349575
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2033807792953331359, guid: 9db38cb332690ffda8eaa8a6dd73cf55, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2033807792953331359, guid: 9db38cb332690ffda8eaa8a6dd73cf55, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2033807792953331359, guid: 9db38cb332690ffda8eaa8a6dd73cf55, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2033807792953331359, guid: 9db38cb332690ffda8eaa8a6dd73cf55, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2033807792953331359, guid: 9db38cb332690ffda8eaa8a6dd73cf55, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2033807792953331359, guid: 9db38cb332690ffda8eaa8a6dd73cf55, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2033807792953331359, guid: 9db38cb332690ffda8eaa8a6dd73cf55, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2033807792953331359, guid: 9db38cb332690ffda8eaa8a6dd73cf55, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2033807792953331359, guid: 9db38cb332690ffda8eaa8a6dd73cf55, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2033807792953331359, guid: 9db38cb332690ffda8eaa8a6dd73cf55, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570924426081474257, guid: 9db38cb332690ffda8eaa8a6dd73cf55, type: 3}
+      propertyPath: m_Name
+      value: gamemanger
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9db38cb332690ffda8eaa8a6dd73cf55, type: 3}
 --- !u!1 &491978255
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,7 +993,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "prueba \npersonaje Alba"
+  m_text: Space Shooter
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -1668,6 +1725,7 @@ GameObject:
   - component: {fileID: 1097718986}
   - component: {fileID: 1097718985}
   - component: {fileID: 1097718984}
+  - component: {fileID: 1097718987}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1749,6 +1807,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1097718987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097718983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb303fb989f470184af9c6aabd0d8b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontal: 0
+  vertical: 0
+  actionJump: 0
+  actionFire1: 0
+  actionSubmit: 0
+  actionCancel: 0
+  actionPause: 0
 --- !u!1 &1134349496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,8 +1954,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c1968ae60c691d5b613feeeb5df1a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedMode: 0
-  sceneToLoad: alba
+  selectedMode: 1
+  sceneToLoad: Assets/Scenes/space shooter/01_SpaceShooter.unity
 --- !u!114 &1587951198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2118,3 +2195,4 @@ SceneRoots:
   - {fileID: 1097718986}
   - {fileID: 491978261}
   - {fileID: 940858322}
+  - {fileID: 478349575}

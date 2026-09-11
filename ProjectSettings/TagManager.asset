@@ -8,6 +8,10 @@ TagManager:
   - Brick
   - Paddle
   - Ball
+  - Enemy
+  - Boundary
+  - Bolt_enemy
+  - PlayerBolt
   layers:
   - Default
   - TransparentFX

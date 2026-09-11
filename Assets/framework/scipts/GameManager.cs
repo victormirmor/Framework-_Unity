@@ -39,8 +39,8 @@ public class GameManager : MonoBehaviour
         InitializeGame();
     }
 
-    private void OnEnable() => SceneManager.sceneLoaded += OnSceneLoaded;
-    private void OnDisable() => SceneManager.sceneLoaded -= OnSceneLoaded;
+    //private void OnEnable() => SceneManager.sceneLoaded += OnSceneLoaded;
+    //private void OnDisable() => SceneManager.sceneLoaded -= OnSceneLoaded;
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
@@ -79,16 +79,26 @@ public class GameManager : MonoBehaviour
         Debug.Log($"[GameManager] Datos reseteados para una nueva sesión | Time.timeScale: {Time.timeScale}");
     }
 
-    public void SetGameMode(GameMode mode)
+        // Dentro de GameManager.cs
+
+public void SetGameMode(GameMode mode){
+    currentMode = mode;
+
+    // Asegurar que las vidas y salud se carguen siempre desde defaultSettings al seleccionar un modo
+    if (defaultSettings != null)
     {
-        currentMode = mode;
+        totalLives = defaultSettings.defaultLives;
+        currentHealth = defaultSettings.defaultHealth;
+        globalScore = defaultSettings.defaultScore;
+    }
 
 #if UNITY_EDITOR
-        string prefKey = HIGH_SCORE_PREFIX + currentMode.ToString();
-        bool exists = PlayerPrefs.HasKey(prefKey);
-        Debug.Log($"<color=cyan>[Editor Debug]</color> Modo asignado: <b>{currentMode}</b> | Clave PlayerPrefs: '{prefKey}' | ¿Existe en disco?: {exists} | Récord actual: {GetHighScore(currentMode)}");
+    string prefKey = HIGH_SCORE_PREFIX + currentMode.ToString();
+    bool exists = PlayerPrefs.HasKey(prefKey);
+    Debug.Log($"<color=cyan>[Editor Debug]</color> Modo asignado: <b>{currentMode}</b> | Vidas inicializadas: {totalLives} | Clave PlayerPrefs: '{prefKey}' | ¿Existe en disco?: {exists} | Récord actual: {GetHighScore(currentMode)}");
 #endif
-    }
+}
+
 
     public int GetHighScore(GameMode mode)
     {

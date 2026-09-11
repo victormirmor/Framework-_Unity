@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 1276520162010184124}
   - component: {fileID: 3093156337369651196}
   - component: {fileID: 6509478647122817784}
-  - component: {fileID: 25795204882224666}
   m_Layer: 0
   m_Name: Bulllet-Enemy
-  m_TagString: Enemy
+  m_TagString: Bolt_enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,21 +99,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
---- !u!114 &25795204882224666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2071474958229717265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8846417901f4942d2a5fa9e32ce69d45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosion: {fileID: 0}
-  playerExplosion: {fileID: 100008, guid: 3455fe69f7ddc4604b95bf9b0a1e88d7, type: 3}
-  scoreValue: 0
 --- !u!1 &5752766162811874408
 GameObject:
   m_ObjectHideFlags: 0

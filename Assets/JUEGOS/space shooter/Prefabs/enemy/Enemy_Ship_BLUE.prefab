@@ -4801,12 +4801,11 @@ GameObject:
   - component: {fileID: 400002}
   - component: {fileID: 5400000}
   - component: {fileID: 13500000}
-  - component: {fileID: 11400004}
   - component: {fileID: 11400000}
   - component: {fileID: 11400006}
   - component: {fileID: 8200000}
   - component: {fileID: 685447401375766922}
-  - component: {fileID: 747016447741655601}
+  - component: {fileID: 5369770274093974621}
   m_Layer: 0
   m_Name: Enemy_Ship_BLUE
   m_TagString: Enemy
@@ -4874,27 +4873,12 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.85
   m_Center: {x: 0, y: 0, z: -0.3}
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8846417901f4942d2a5fa9e32ce69d45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosion: {fileID: 100012, guid: 160925a6fe2664f2a978566b819f0af0, type: 3}
-  playerExplosion: {fileID: 100008, guid: 3455fe69f7ddc4604b95bf9b0a1e88d7, type: 3}
-  scoreValue: 20
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4907,7 +4891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365dd2da98dd9431b8c5d7406c200eeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shot: {fileID: 100000, guid: 11e27c26ac87b40f0a62ec40d7261989, type: 3}
+  shot: {fileID: 2071474958229717265, guid: 12ce8a00caee51b258d5af9b28a833e9, type: 3}
   shotSpawn: {fileID: 400006}
   fireRate: 1.5
   delay: 0.5
@@ -5044,7 +5028,7 @@ CapsuleCollider:
   m_Height: 1.7860404
   m_Direction: 1
   m_Center: {x: -0.01726687, y: 0.3930202, z: 0.20624506}
---- !u!114 &747016447741655601
+--- !u!114 &5369770274093974621
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5053,10 +5037,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3d60268929df1b4c9129bc0352baec0, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e29ddc85361243cfbfee50840b24335, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: 76c5e9d81d05e00289fdd9ba6c1cbfba, type: 2}
+  data: {fileID: 11400000, guid: 1757487e6f96f3486985ec3205473bb5, type: 2}
 --- !u!1 &100004
 GameObject:
   m_ObjectHideFlags: 0
