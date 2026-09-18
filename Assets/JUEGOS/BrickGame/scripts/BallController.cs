@@ -1,4 +1,5 @@
 using UnityEngine;
+using MiJuego.InputAdaptador;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class BallController : MonoBehaviour
@@ -26,7 +27,7 @@ public class BallController : MonoBehaviour
         }
 
         // 2. Si no se ha lanzado y se presiona Fire1, recién ahí dispara
-        if (!isBallActive && InputDataMap.Instance != null && InputDataMap.Instance.actionFire1)
+        if (!isBallActive && CrossPlatformInputManager.GetButtonDown("Fire1"));
         {
             LaunchBall();
         }

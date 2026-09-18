@@ -4,9 +4,16 @@ using System.Collections;
 public class Done_Mover : MonoBehaviour
 {
 	public float speed;
+	public Vector3 VTranslate;
+	public Rigidbody Rb;
 
 	void Start ()
 	{
-		GetComponent<Rigidbody>().velocity = transform.forward * speed;
+		Rb=GetComponent<Rigidbody>();
+		translate();
+	}
+
+	void translate(){
+		Rb.velocity = VTranslate * speed;
 	}
 }

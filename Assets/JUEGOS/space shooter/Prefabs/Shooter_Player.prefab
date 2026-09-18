@@ -4908,7 +4908,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1.75, y: 1.75, z: 1.75}
+  m_LocalScale: {x: 1.95, y: 1.95, z: 1.95}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6555380469705577291}
@@ -5168,6 +5168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 12
   rotate: 1.8
+  padding: 0.5
 --- !u!114 &4054101246824345535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5197,6 +5198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnDelay: 5
+  invincibilityDuration: 8
   playerExplosion: {fileID: 100008, guid: a93496017806b7740910df5fd946f306, type: 3}
 --- !u!1 &8274339357555088142
 GameObject:

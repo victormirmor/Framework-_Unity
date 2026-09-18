@@ -14,12 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bricks/00.unity
     guid: 5a548fda135147fb2b9f0f53c09888b9
-  - enabled: 0
-    path: Assets/Scenes/Bricks/01.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
-    path: Assets/Scenes/Bricks/02.unity
-    guid: 8d1394ee68e3249a38122c8116ab2c8f
   - enabled: 1
     path: Assets/Scenes/space shooter/01_SpaceShooter.unity
     guid: 8b7224f1360790e42ad82967e5d4a5a5

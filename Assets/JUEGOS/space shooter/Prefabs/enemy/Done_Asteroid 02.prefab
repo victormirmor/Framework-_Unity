@@ -175,6 +175,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -5
+  VTranslate: {x: 0, y: 0, z: 1}
+  Rb: {fileID: 0}
 --- !u!136 &5552424658273452588
 CapsuleCollider:
   m_ObjectHideFlags: 0

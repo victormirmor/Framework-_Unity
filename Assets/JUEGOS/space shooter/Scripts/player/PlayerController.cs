@@ -1,9 +1,12 @@
 using UnityEngine;
+using MiJuego.InputAdaptador;
 
 namespace SpaceShooter
 {
     public class PlayerController : MonoBehaviour
     {
+        const string AXIS_HORIZONTAL = "Horizontal";
+        const string AXIS_VERTICAL = "Vertical";
         [Header("Configuración de Movimiento")]
         [SerializeField] [Range(1.0f, 20f)] private float speed = 12f;
         [SerializeField] [Range(0.1f, 2.0f)] private float rotate;
@@ -62,8 +65,8 @@ namespace SpaceShooter
             }
 
             // Lectura de entrada
-            horizontalInput = (InputDataMap.Instance != null) ? InputDataMap.Instance.horizontal : Input.GetAxisRaw("Horizontal");
-            verticalInput = (InputDataMap.Instance != null) ? InputDataMap.Instance.vertical : Input.GetAxisRaw("Vertical");
+            horizontalInput = CrossPlatformInputManager.GetAxis(AXIS_HORIZONTAL);
+            verticalInput =CrossPlatformInputManager.GetAxis(AXIS_VERTICAL);
         }
 
         private void FixedUpdate()

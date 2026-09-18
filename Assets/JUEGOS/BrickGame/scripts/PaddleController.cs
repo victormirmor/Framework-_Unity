@@ -1,4 +1,5 @@
 using UnityEngine;
+using MiJuego.InputAdaptador;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PaddleController : MonoBehaviour
@@ -8,6 +9,7 @@ public class PaddleController : MonoBehaviour
 
     private Rigidbody2D rb;
     private float horizontalInput;
+    const string AXIS_HORIZONTAL = "Horizontal";
 
     private void Awake()
     {
@@ -24,7 +26,7 @@ public class PaddleController : MonoBehaviour
         }
 
         // Lectura de entrada
-        horizontalInput = (InputDataMap.Instance != null) ? InputDataMap.Instance.horizontal : Input.GetAxisRaw("Horizontal");
+        horizontalInput = CrossPlatformInputManager.GetAxis(AXIS_HORIZONTAL);
     }
 
     private void FixedUpdate()

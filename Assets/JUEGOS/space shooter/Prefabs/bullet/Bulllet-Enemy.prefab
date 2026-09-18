@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+  VTranslate: {x: 0, y: 0, z: -1}
+  Rb: {fileID: 0}
 --- !u!1 &5752766162811874408
 GameObject:
   m_ObjectHideFlags: 0

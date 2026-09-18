@@ -1,4 +1,5 @@
 using UnityEngine;
+using MiJuego.InputAdaptador;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerControllerCC : MonoBehaviour
@@ -32,16 +33,8 @@ public class PlayerControllerCC : MonoBehaviour
         float h = 0f;
         float v = 0f;
 
-        if (InputDataMap.Instance != null)
-        {
-            h = InputDataMap.Instance.horizontal;
-            v = InputDataMap.Instance.vertical;
-        }
-        else
-        {
-            h = Input.GetAxisRaw("Horizontal");
-            v = Input.GetAxisRaw("Vertical");
-        }
+            h = CrossPlatformInputManager.GetAxis("Horizontal");
+            v = CrossPlatformInputManager.GetAxis("Vertical");
 
         // 3. Proyectar direcciones orientadas a la cámara
         Transform camTransform = Camera.main != null ? Camera.main.transform : null;

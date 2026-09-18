@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using MiJuego.InputAdaptador;
 
 namespace SpaceShooter
 {
@@ -17,14 +18,10 @@ namespace SpaceShooter
 			audioSource = GetComponent<AudioSource>();
 		}
 
-		private void Update()
-		{
-			// Validamos que la instancia del mapeo de entrada exista
-			if (InputDataMap.Instance == null){
-				Debug.Log("no hay InputDataMap");
-				}
+		private void Update(){
 
-			if (Time.time > nextFire && CoutBullets > 0 && InputDataMap.Instance.actionFire1){
+
+			if (Time.time > nextFire && CoutBullets > 0 && CrossPlatformInputManager.GetButtonDown("Fire1")){
 				Debug.Log("disparo");
 				Shoot();
 			}

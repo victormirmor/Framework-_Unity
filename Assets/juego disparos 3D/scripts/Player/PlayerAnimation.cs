@@ -2,7 +2,7 @@ using UnityEngine;
 
     
     [RequireComponent(typeof(Animator))]
-    public class PlayerAnimation : MonoBehaviour
+    public class PlayerAnimations : MonoBehaviour
     {
         private Animator anim;
 
