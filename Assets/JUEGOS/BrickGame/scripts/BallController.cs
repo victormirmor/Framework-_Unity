@@ -1,5 +1,4 @@
 using UnityEngine;
-using MiJuego.InputAdaptador;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class BallController : MonoBehaviour
@@ -20,17 +19,10 @@ public class BallController : MonoBehaviour
 
     private void Update()
     {
-        // 1. Verificamos que el juego esté en estado 'Playing' antes de leer la orden de disparo
-        if (LevelManager.Instance != null && LevelManager.Instance.CurrentState != GameState.Playing)
-        {
-            return;
-        }
+        bool isPlaying = LevelManager.Instance == null || LevelManager.Instance.CurrentState == GameState.Playing;
+        bool firePressed = InputManager.GetButtonDown("Fire1");
 
-        // 2. Si no se ha lanzado y se presiona Fire1, recién ahí dispara
-        if (!isBallActive && CrossPlatformInputManager.GetButtonDown("Fire1"));
-        {
-            LaunchBall();
-        }
+        if (isPlaying && !isBallActive && firePressed) LaunchBall();
     }
 
     public void LaunchBall()

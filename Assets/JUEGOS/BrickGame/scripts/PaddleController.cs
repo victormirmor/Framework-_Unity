@@ -1,5 +1,5 @@
 using UnityEngine;
-using MiJuego.InputAdaptador;
+//using MiJuego.InputAdaptador;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PaddleController : MonoBehaviour
@@ -26,7 +26,7 @@ public class PaddleController : MonoBehaviour
         }
 
         // Lectura de entrada
-        horizontalInput = CrossPlatformInputManager.GetAxis(AXIS_HORIZONTAL);
+        horizontalInput = InputManager.GetAxis(AXIS_HORIZONTAL);
     }
 
     private void FixedUpdate()

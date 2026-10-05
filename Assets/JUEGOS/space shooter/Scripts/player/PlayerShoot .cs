@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using MiJuego.InputAdaptador;
+//using MiJuego.InputAdaptador;
 
 namespace SpaceShooter
 {
@@ -21,7 +21,7 @@ namespace SpaceShooter
 		private void Update(){
 
 
-			if (Time.time > nextFire && CoutBullets > 0 && CrossPlatformInputManager.GetButtonDown("Fire1")){
+			if (Time.time > nextFire && CoutBullets > 0 && InputManager.GetButtonDown("Fire1")){
 				Debug.Log("disparo");
 				Shoot();
 			}

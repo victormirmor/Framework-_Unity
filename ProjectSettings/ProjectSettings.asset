@@ -160,7 +160,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Standalone: com.VicotuxGame.Framework-de-Unity
+    Standalone: com.Vicotux-GameS-Tux.Juegos-ejemplo
   buildNumber:
     Bratwurst: 0
     Standalone: 0
@@ -781,7 +781,7 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 2
+  activeInputHandler: 1
   windowsGamepadBackendHint: 0
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0

@@ -1,5 +1,5 @@
 using UnityEngine;
-using MiJuego.InputAdaptador;
+//using MiJuego.InputAdaptador;
 
 namespace SpaceShooter
 {
@@ -65,8 +65,8 @@ namespace SpaceShooter
             }
 
             // Lectura de entrada
-            horizontalInput = CrossPlatformInputManager.GetAxis(AXIS_HORIZONTAL);
-            verticalInput =CrossPlatformInputManager.GetAxis(AXIS_VERTICAL);
+            horizontalInput = InputManager.GetAxis(AXIS_HORIZONTAL);
+            verticalInput = InputManager.GetAxis(AXIS_VERTICAL);
         }
 
         private void FixedUpdate()

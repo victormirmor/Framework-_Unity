@@ -37,25 +37,16 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""rotate_left"",
-                    ""type"": ""Button"",
-                    ""id"": ""bc46a78b-5dc3-439c-86a2-4669fadb2262"",
-                    ""expectedControlType"": ""Button"",
+                    ""name"": ""Camera"",
+                    ""type"": ""Value"",
+                    ""id"": ""fc9dc14f-edac-4272-b2ba-de315fde86b0"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""rotate_right"",
-                    ""type"": ""Button"",
-                    ""id"": ""28014b15-887d-4895-83f5-5edb289e3645"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Fire1"",
+                    ""name"": ""Action1"",
                     ""type"": ""Button"",
                     ""id"": ""a1713031-48fd-4734-8e93-2c2fbd8834d2"",
                     ""expectedControlType"": ""Button"",
@@ -64,9 +55,99 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Fire2"",
+                    ""name"": ""Action2"",
                     ""type"": ""Button"",
                     ""id"": ""e15ce24d-06ab-4c6e-a192-184d3f7de9a0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Action3"",
+                    ""type"": ""Button"",
+                    ""id"": ""66d1bd8d-59b4-4f2e-9ac5-5d764de1c247"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Action4"",
+                    ""type"": ""Button"",
+                    ""id"": ""bb0b2d76-0049-41d2-ab0e-8692e2e85a5c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""rotate_right"",
+                    ""type"": ""Button"",
+                    ""id"": ""c3655970-acb0-48bc-bed9-230b21ddd8c0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""rotate_left"",
+                    ""type"": ""Button"",
+                    ""id"": ""b2333a0b-2dcf-4750-b00b-ec83579aadbd"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Shoot1"",
+                    ""type"": ""Button"",
+                    ""id"": ""d8bc8fac-b89c-4b2c-bb34-bbf4542cbcb4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Shoot2"",
+                    ""type"": ""Button"",
+                    ""id"": ""28528b00-065f-4a55-b542-25d9461df94b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""AditionalR"",
+                    ""type"": ""Button"",
+                    ""id"": ""1188f5ba-5927-4959-abc1-393408fce951"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""AditionalL"",
+                    ""type"": ""Button"",
+                    ""id"": ""0ee9817d-bed0-438a-9145-979840f4f026"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Inventary"",
+                    ""type"": ""Button"",
+                    ""id"": ""7bc0db48-62c2-4dc5-b080-39d965d39234"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""map"",
+                    ""type"": ""Button"",
+                    ""id"": ""1b58b053-b40b-4c0b-a16b-21456a7b48b9"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -230,133 +311,23 @@ public partial class @Player: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""026eecd8-2989-4e4d-8820-f4513b6c78ae"",
-                    ""path"": ""<DualShockGamepad>/leftShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""gamepad"",
-                    ""action"": ""rotate_left"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""484f5870-dfb3-485e-974a-d0799c03f727"",
-                    ""path"": ""<SwitchProControllerHID>/leftShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""gamepad"",
-                    ""action"": ""rotate_left"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""63910a31-d0ce-461c-ab07-26dd09136220"",
-                    ""path"": ""<XInputController>/leftShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""gamepad"",
-                    ""action"": ""rotate_left"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""117a3e9f-0adf-4706-9e9d-46edf38c7ee3"",
-                    ""path"": ""<Keyboard>/q"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""keyboard"",
-                    ""action"": ""rotate_left"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""b54fccfc-e9fe-45f3-a559-f8f94b1bba8a"",
-                    ""path"": ""<Linux::GameSirG7Pro>/Select"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""g7"",
-                    ""action"": ""rotate_left"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""b3bf2263-8bca-47b6-8bdc-af5404388151"",
-                    ""path"": ""<DualShockGamepad>/rightShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""gamepad"",
-                    ""action"": ""rotate_right"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""1b253bb2-6032-4867-900b-159bc49e4bde"",
-                    ""path"": ""<SwitchProControllerHID>/rightShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""gamepad"",
-                    ""action"": ""rotate_right"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""df281077-5f40-49f4-bb2b-4c335e3c1cb2"",
-                    ""path"": ""<XInputController>/rightShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""gamepad"",
-                    ""action"": ""rotate_right"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""f4f7dc75-3d88-4aac-b7a6-2eb6cdbed906"",
-                    ""path"": ""<Keyboard>/e"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""keyboard"",
-                    ""action"": ""rotate_right"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""022aafae-e937-4432-9124-05b52d482339"",
-                    ""path"": ""<Linux::GameSirG7Pro>/Start"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""g7"",
-                    ""action"": ""rotate_right"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""e8186459-e71d-4a5a-a69c-264fa426bb24"",
                     ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""gamepad"",
-                    ""action"": ""Fire1"",
+                    ""action"": ""Action1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""9b413f4e-f901-4038-af4c-06f42ad87300"",
-                    ""path"": ""<Keyboard>/ctrl"",
+                    ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""keyboard"",
-                    ""action"": ""Fire1"",
+                    ""action"": ""Action1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -367,7 +338,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""g7"",
-                    ""action"": ""Fire1"",
+                    ""action"": ""Action1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -378,7 +349,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Fire1"",
+                    ""action"": ""Action1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -389,7 +360,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Fire1"",
+                    ""action"": ""Action1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -400,7 +371,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""gamepad"",
-                    ""action"": ""Fire2"",
+                    ""action"": ""Action2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -411,7 +382,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""keyboard"",
-                    ""action"": ""Fire2"",
+                    ""action"": ""Action2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -422,7 +393,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""g7"",
-                    ""action"": ""Fire2"",
+                    ""action"": ""Action2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -433,7 +404,480 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Fire2"",
+                    ""action"": ""Action2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""380beaa9-8293-44e0-8e28-7ea4a9fef664"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""gamepad"",
+                    ""action"": ""Action3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""917be000-bc92-4e9e-8da9-d2bee7b89c45"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""keyboard"",
+                    ""action"": ""Action3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4f4864c7-069e-48ec-a724-bf3147784a99"",
+                    ""path"": ""<Linux::GameSirG7Pro>/TriggerRight"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""g7"",
+                    ""action"": ""Action3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""68791447-11f2-4bae-bcc9-bbe750863493"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Action3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1c1c68d3-fcbd-44af-a8ed-c8693be4773a"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""gamepad"",
+                    ""action"": ""Action4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1761109c-30bb-43ff-9d34-d495adc0554c"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""keyboard"",
+                    ""action"": ""Action4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""364e8434-ca51-4972-b512-3f753cc7ebd5"",
+                    ""path"": ""<Linux::GameSirG7Pro>/TriggerRight"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""g7"",
+                    ""action"": ""Action4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1baaeeb4-2e9d-43c4-8100-d0b58cf598c5"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Action4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6cb3918d-bf31-466d-aa51-6e06176f2184"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""gamepad"",
+                    ""action"": ""Camera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""47d8b2f8-9776-485a-a53f-4ccbc550ffb7"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""g7"",
+                    ""action"": ""Camera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f42d9b36-31e7-4d2f-a9ab-f3405efc4841"",
+                    ""path"": ""<Joystick>/stick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""gamepad"",
+                    ""action"": ""Camera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""131a7a6d-a634-4490-9aa6-b0abefa104a1"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""gamepad"",
+                    ""action"": ""rotate_right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f2c8c7f9-1544-4ebf-b4a3-33bb927bd005"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""keyboard"",
+                    ""action"": ""rotate_right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""703e0455-1118-4331-af45-c43516508103"",
+                    ""path"": ""<Linux::GameSirG7Pro>/TriggerRight"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""g7"",
+                    ""action"": ""rotate_right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c72872f7-d136-4938-b81e-3084a23b6b20"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""rotate_right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2beb83c8-39d0-43e7-8c3d-3df1919c2178"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""gamepad"",
+                    ""action"": ""rotate_left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0540db78-d7d3-4f15-bbeb-f6446d5a6c90"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""keyboard"",
+                    ""action"": ""rotate_left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a4224197-c311-454a-8ee8-316859e37d0b"",
+                    ""path"": ""<Linux::GameSirG7Pro>/TriggerRight"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""g7"",
+                    ""action"": ""rotate_left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""994650ba-c924-48c1-8ae3-aaaa89e177d0"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""rotate_left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""040532f3-d675-40da-89fa-246a5711d64e"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""gamepad"",
+                    ""action"": ""Shoot1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f90b6429-348d-46ee-b602-ae4072c6886c"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""keyboard"",
+                    ""action"": ""Shoot1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""586fa121-100c-44e2-9654-5923724e85e4"",
+                    ""path"": ""<Linux::GameSirG7Pro>/TriggerRight"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""g7"",
+                    ""action"": ""Shoot1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""581d7be2-619e-45e9-a8e8-d221ce156367"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""365e9b01-f53e-4c82-ac65-042ded04e339"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""gamepad"",
+                    ""action"": ""Shoot2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9b321af9-f752-4c86-ae31-2a842ccbf01d"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""keyboard"",
+                    ""action"": ""Shoot2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0691e33d-87c9-4506-b777-2807946e712e"",
+                    ""path"": ""<Linux::GameSirG7Pro>/TriggerRight"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""g7"",
+                    ""action"": ""Shoot2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ee5e619c-49f0-467f-9b62-3000f1f960f5"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4da3c4f1-12e4-4928-a681-04f2dab7d903"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""gamepad"",
+                    ""action"": ""AditionalR"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e8b7ce83-660d-47bb-b6f3-2ef62101e07a"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""keyboard"",
+                    ""action"": ""AditionalR"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""344c70b1-c4d8-4b9d-98ff-b6f2fd11e4b2"",
+                    ""path"": ""<Linux::GameSirG7Pro>/TriggerRight"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""g7"",
+                    ""action"": ""AditionalR"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e4fd9700-e90e-4129-aeeb-5e03abd7c61f"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""AditionalR"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""126ba1db-fabb-4569-b816-5049359b0ea9"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""gamepad"",
+                    ""action"": ""Inventary"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b18a313c-bc52-47d3-9df1-0bdd78f121fd"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""keyboard"",
+                    ""action"": ""Inventary"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ecedc448-ab96-4e27-8e2a-f7607b9e2857"",
+                    ""path"": ""<Linux::GameSirG7Pro>/TriggerRight"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""g7"",
+                    ""action"": ""Inventary"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e7b55dc0-a4d4-46f5-8d07-fa709afcc184"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Inventary"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""282eb001-0c69-4b2c-a985-69e8b14d28b8"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""gamepad"",
+                    ""action"": ""AditionalL"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4fbfa097-6235-4d15-84ad-3a4dd29cfc02"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""keyboard"",
+                    ""action"": ""AditionalL"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""31a89c5a-5908-48f5-a634-dd52eed892d0"",
+                    ""path"": ""<Linux::GameSirG7Pro>/TriggerRight"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""g7"",
+                    ""action"": ""AditionalL"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""24a0375d-c705-4dcc-9abb-ba2b239fd2a3"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""AditionalL"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5c71d279-4c30-409e-89b4-5a5d5d06b0a7"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""gamepad"",
+                    ""action"": ""map"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2f0d7bbd-358e-4ae6-856a-dc607fa01aaf"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""keyboard"",
+                    ""action"": ""map"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""325c2541-8581-401d-8675-6623149fa9ae"",
+                    ""path"": ""<Linux::GameSirG7Pro>/TriggerRight"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""g7"",
+                    ""action"": ""map"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f9e20579-59c7-4377-a468-1f5120eded08"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""map"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1109,10 +1553,19 @@ public partial class @Player: IInputActionCollection2, IDisposable
         // movement
         m_movement = asset.FindActionMap("movement", throwIfNotFound: true);
         m_movement_move = m_movement.FindAction("move", throwIfNotFound: true);
-        m_movement_rotate_left = m_movement.FindAction("rotate_left", throwIfNotFound: true);
+        m_movement_Camera = m_movement.FindAction("Camera", throwIfNotFound: true);
+        m_movement_Action1 = m_movement.FindAction("Action1", throwIfNotFound: true);
+        m_movement_Action2 = m_movement.FindAction("Action2", throwIfNotFound: true);
+        m_movement_Action3 = m_movement.FindAction("Action3", throwIfNotFound: true);
+        m_movement_Action4 = m_movement.FindAction("Action4", throwIfNotFound: true);
         m_movement_rotate_right = m_movement.FindAction("rotate_right", throwIfNotFound: true);
-        m_movement_Fire1 = m_movement.FindAction("Fire1", throwIfNotFound: true);
-        m_movement_Fire2 = m_movement.FindAction("Fire2", throwIfNotFound: true);
+        m_movement_rotate_left = m_movement.FindAction("rotate_left", throwIfNotFound: true);
+        m_movement_Shoot1 = m_movement.FindAction("Shoot1", throwIfNotFound: true);
+        m_movement_Shoot2 = m_movement.FindAction("Shoot2", throwIfNotFound: true);
+        m_movement_AditionalR = m_movement.FindAction("AditionalR", throwIfNotFound: true);
+        m_movement_AditionalL = m_movement.FindAction("AditionalL", throwIfNotFound: true);
+        m_movement_Inventary = m_movement.FindAction("Inventary", throwIfNotFound: true);
+        m_movement_map = m_movement.FindAction("map", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1187,19 +1640,37 @@ public partial class @Player: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_movement;
     private List<IMovementActions> m_MovementActionsCallbackInterfaces = new List<IMovementActions>();
     private readonly InputAction m_movement_move;
-    private readonly InputAction m_movement_rotate_left;
+    private readonly InputAction m_movement_Camera;
+    private readonly InputAction m_movement_Action1;
+    private readonly InputAction m_movement_Action2;
+    private readonly InputAction m_movement_Action3;
+    private readonly InputAction m_movement_Action4;
     private readonly InputAction m_movement_rotate_right;
-    private readonly InputAction m_movement_Fire1;
-    private readonly InputAction m_movement_Fire2;
+    private readonly InputAction m_movement_rotate_left;
+    private readonly InputAction m_movement_Shoot1;
+    private readonly InputAction m_movement_Shoot2;
+    private readonly InputAction m_movement_AditionalR;
+    private readonly InputAction m_movement_AditionalL;
+    private readonly InputAction m_movement_Inventary;
+    private readonly InputAction m_movement_map;
     public struct MovementActions
     {
         private @Player m_Wrapper;
         public MovementActions(@Player wrapper) { m_Wrapper = wrapper; }
         public InputAction @move => m_Wrapper.m_movement_move;
-        public InputAction @rotate_left => m_Wrapper.m_movement_rotate_left;
+        public InputAction @Camera => m_Wrapper.m_movement_Camera;
+        public InputAction @Action1 => m_Wrapper.m_movement_Action1;
+        public InputAction @Action2 => m_Wrapper.m_movement_Action2;
+        public InputAction @Action3 => m_Wrapper.m_movement_Action3;
+        public InputAction @Action4 => m_Wrapper.m_movement_Action4;
         public InputAction @rotate_right => m_Wrapper.m_movement_rotate_right;
-        public InputAction @Fire1 => m_Wrapper.m_movement_Fire1;
-        public InputAction @Fire2 => m_Wrapper.m_movement_Fire2;
+        public InputAction @rotate_left => m_Wrapper.m_movement_rotate_left;
+        public InputAction @Shoot1 => m_Wrapper.m_movement_Shoot1;
+        public InputAction @Shoot2 => m_Wrapper.m_movement_Shoot2;
+        public InputAction @AditionalR => m_Wrapper.m_movement_AditionalR;
+        public InputAction @AditionalL => m_Wrapper.m_movement_AditionalL;
+        public InputAction @Inventary => m_Wrapper.m_movement_Inventary;
+        public InputAction @map => m_Wrapper.m_movement_map;
         public InputActionMap Get() { return m_Wrapper.m_movement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1212,18 +1683,45 @@ public partial class @Player: IInputActionCollection2, IDisposable
             @move.started += instance.OnMove;
             @move.performed += instance.OnMove;
             @move.canceled += instance.OnMove;
-            @rotate_left.started += instance.OnRotate_left;
-            @rotate_left.performed += instance.OnRotate_left;
-            @rotate_left.canceled += instance.OnRotate_left;
+            @Camera.started += instance.OnCamera;
+            @Camera.performed += instance.OnCamera;
+            @Camera.canceled += instance.OnCamera;
+            @Action1.started += instance.OnAction1;
+            @Action1.performed += instance.OnAction1;
+            @Action1.canceled += instance.OnAction1;
+            @Action2.started += instance.OnAction2;
+            @Action2.performed += instance.OnAction2;
+            @Action2.canceled += instance.OnAction2;
+            @Action3.started += instance.OnAction3;
+            @Action3.performed += instance.OnAction3;
+            @Action3.canceled += instance.OnAction3;
+            @Action4.started += instance.OnAction4;
+            @Action4.performed += instance.OnAction4;
+            @Action4.canceled += instance.OnAction4;
             @rotate_right.started += instance.OnRotate_right;
             @rotate_right.performed += instance.OnRotate_right;
             @rotate_right.canceled += instance.OnRotate_right;
-            @Fire1.started += instance.OnFire1;
-            @Fire1.performed += instance.OnFire1;
-            @Fire1.canceled += instance.OnFire1;
-            @Fire2.started += instance.OnFire2;
-            @Fire2.performed += instance.OnFire2;
-            @Fire2.canceled += instance.OnFire2;
+            @rotate_left.started += instance.OnRotate_left;
+            @rotate_left.performed += instance.OnRotate_left;
+            @rotate_left.canceled += instance.OnRotate_left;
+            @Shoot1.started += instance.OnShoot1;
+            @Shoot1.performed += instance.OnShoot1;
+            @Shoot1.canceled += instance.OnShoot1;
+            @Shoot2.started += instance.OnShoot2;
+            @Shoot2.performed += instance.OnShoot2;
+            @Shoot2.canceled += instance.OnShoot2;
+            @AditionalR.started += instance.OnAditionalR;
+            @AditionalR.performed += instance.OnAditionalR;
+            @AditionalR.canceled += instance.OnAditionalR;
+            @AditionalL.started += instance.OnAditionalL;
+            @AditionalL.performed += instance.OnAditionalL;
+            @AditionalL.canceled += instance.OnAditionalL;
+            @Inventary.started += instance.OnInventary;
+            @Inventary.performed += instance.OnInventary;
+            @Inventary.canceled += instance.OnInventary;
+            @map.started += instance.OnMap;
+            @map.performed += instance.OnMap;
+            @map.canceled += instance.OnMap;
         }
 
         private void UnregisterCallbacks(IMovementActions instance)
@@ -1231,18 +1729,45 @@ public partial class @Player: IInputActionCollection2, IDisposable
             @move.started -= instance.OnMove;
             @move.performed -= instance.OnMove;
             @move.canceled -= instance.OnMove;
-            @rotate_left.started -= instance.OnRotate_left;
-            @rotate_left.performed -= instance.OnRotate_left;
-            @rotate_left.canceled -= instance.OnRotate_left;
+            @Camera.started -= instance.OnCamera;
+            @Camera.performed -= instance.OnCamera;
+            @Camera.canceled -= instance.OnCamera;
+            @Action1.started -= instance.OnAction1;
+            @Action1.performed -= instance.OnAction1;
+            @Action1.canceled -= instance.OnAction1;
+            @Action2.started -= instance.OnAction2;
+            @Action2.performed -= instance.OnAction2;
+            @Action2.canceled -= instance.OnAction2;
+            @Action3.started -= instance.OnAction3;
+            @Action3.performed -= instance.OnAction3;
+            @Action3.canceled -= instance.OnAction3;
+            @Action4.started -= instance.OnAction4;
+            @Action4.performed -= instance.OnAction4;
+            @Action4.canceled -= instance.OnAction4;
             @rotate_right.started -= instance.OnRotate_right;
             @rotate_right.performed -= instance.OnRotate_right;
             @rotate_right.canceled -= instance.OnRotate_right;
-            @Fire1.started -= instance.OnFire1;
-            @Fire1.performed -= instance.OnFire1;
-            @Fire1.canceled -= instance.OnFire1;
-            @Fire2.started -= instance.OnFire2;
-            @Fire2.performed -= instance.OnFire2;
-            @Fire2.canceled -= instance.OnFire2;
+            @rotate_left.started -= instance.OnRotate_left;
+            @rotate_left.performed -= instance.OnRotate_left;
+            @rotate_left.canceled -= instance.OnRotate_left;
+            @Shoot1.started -= instance.OnShoot1;
+            @Shoot1.performed -= instance.OnShoot1;
+            @Shoot1.canceled -= instance.OnShoot1;
+            @Shoot2.started -= instance.OnShoot2;
+            @Shoot2.performed -= instance.OnShoot2;
+            @Shoot2.canceled -= instance.OnShoot2;
+            @AditionalR.started -= instance.OnAditionalR;
+            @AditionalR.performed -= instance.OnAditionalR;
+            @AditionalR.canceled -= instance.OnAditionalR;
+            @AditionalL.started -= instance.OnAditionalL;
+            @AditionalL.performed -= instance.OnAditionalL;
+            @AditionalL.canceled -= instance.OnAditionalL;
+            @Inventary.started -= instance.OnInventary;
+            @Inventary.performed -= instance.OnInventary;
+            @Inventary.canceled -= instance.OnInventary;
+            @map.started -= instance.OnMap;
+            @map.performed -= instance.OnMap;
+            @map.canceled -= instance.OnMap;
         }
 
         public void RemoveCallbacks(IMovementActions instance)
@@ -1408,10 +1933,19 @@ public partial class @Player: IInputActionCollection2, IDisposable
     public interface IMovementActions
     {
         void OnMove(InputAction.CallbackContext context);
-        void OnRotate_left(InputAction.CallbackContext context);
+        void OnCamera(InputAction.CallbackContext context);
+        void OnAction1(InputAction.CallbackContext context);
+        void OnAction2(InputAction.CallbackContext context);
+        void OnAction3(InputAction.CallbackContext context);
+        void OnAction4(InputAction.CallbackContext context);
         void OnRotate_right(InputAction.CallbackContext context);
-        void OnFire1(InputAction.CallbackContext context);
-        void OnFire2(InputAction.CallbackContext context);
+        void OnRotate_left(InputAction.CallbackContext context);
+        void OnShoot1(InputAction.CallbackContext context);
+        void OnShoot2(InputAction.CallbackContext context);
+        void OnAditionalR(InputAction.CallbackContext context);
+        void OnAditionalL(InputAction.CallbackContext context);
+        void OnInventary(InputAction.CallbackContext context);
+        void OnMap(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

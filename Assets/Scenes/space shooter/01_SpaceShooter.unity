@@ -1190,7 +1190,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3100206678843155830, guid: 29fe114d511024da39ba59d448f56d66, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1618,7 +1619,6 @@ GameObject:
   - component: {fileID: 1461320655}
   - component: {fileID: 1461320661}
   - component: {fileID: 1461320660}
-  - component: {fileID: 1461320662}
   m_Layer: 2
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1777,25 +1777,6 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   priority: 0
---- !u!114 &1461320662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461320654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb303fb989f470184af9c6aabd0d8b48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontal: 0
-  vertical: 0
-  actionJump: 0
-  actionFire1: 0
-  actionSubmit: 0
-  actionCancel: 0
-  actionPause: 0
 --- !u!1001 &1519857011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1848,7 +1829,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shield
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2315279619017992084, guid: ec6e4147efc16fff186ef488108cd1cb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3044,7 +3026,6 @@ GameObject:
   - component: {fileID: 1947205718592129218}
   - component: {fileID: 7497838879375117091}
   - component: {fileID: 2114672654510482840}
-  - component: {fileID: 2702065282907394218}
   - component: {fileID: 4378973197329647155}
   - component: {fileID: 3457456621227341397}
   - component: {fileID: 8638603215757701297}
@@ -3086,18 +3067,6 @@ MonoBehaviour:
   menuSceneName: SelectMenu
   gameOverDelay: 3
   fallbackLives: 3
---- !u!114 &2702065282907394218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421108150071568283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c03ba1011e9070f10867d906575f3291, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &3457456621227341397
 AudioSource:
   m_ObjectHideFlags: 0

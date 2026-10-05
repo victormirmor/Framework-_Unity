@@ -1,5 +1,4 @@
 using UnityEngine;
-using MiJuego.InputAdaptador;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMove : MonoBehaviour
@@ -24,8 +23,8 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
-        float h = CrossPlatformInputManager.GetAxis(AXIS_HORIZONTAL);
-        float v = CrossPlatformInputManager.GetAxis(AXIS_VERTICAL);
+        float h = InputManager.GetAxis(AXIS_HORIZONTAL);
+        float v = InputManager.GetAxis(AXIS_VERTICAL);
 
         MoveAndRotate(h, v);
     }
